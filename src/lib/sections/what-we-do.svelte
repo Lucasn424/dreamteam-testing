@@ -77,7 +77,7 @@
         <div
           class="absolute inset-0 h-[404px] w-[192px]"
           style="
-            background: linear-gradient(-20deg, rgba(255,188,85,1) 0%, rgba(223,0,56,1) 50%, rgba(158,65,208,1) 100%);
+            background: linear-gradient(-20deg, rgba(255,123,137,1)  0%, rgba(0,255,237,1)100%);
             clip-path: url(#wwd-clip);
           "
         />
