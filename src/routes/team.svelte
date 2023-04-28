@@ -59,7 +59,7 @@
     {
       img: "nick_munro",
       name: "Nick Munro",
-      role: "Cheif Dreamer",
+      role: "Chief Dreamer",
       blurb:
         "Nick is a multi award winning designer, innovator, entrepreneur who matches opportunity with talent and resource.",
       skills: ["Strategy", "Details", "Commitment"],
@@ -273,7 +273,10 @@
               : `${member.offset}px`}
             class="{selected_team === member ||
               'xl:hover:translate-y-0 hover:translate-y-32'} xl:translate-y-16 translate-y-48 transition-all rounded-t-full p-1 xl:mx-8 mx-4"
-            on:click={() => (selected_team = member)}
+              on:click={() => {
+                selected_team = member;
+                window.scrollTo({ top: window.innerHeight/1.2, behavior: 'smooth' });
+              }}
           >
             <div
               style:background="url(/headshots/webp/{member.img}.webp)"
