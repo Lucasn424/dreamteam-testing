@@ -1,3 +1,7 @@
+<script>
+import CaptionedImage from "./CaptionedImage.svelte";
+</script>
+
 <div
   class="flex flex-col xl:flex-row space-y-10 xl:space-y-0 xl:space-x-10 items-center justify-center p-10"
 >
@@ -7,10 +11,11 @@
       alt="BMX Project Logo"
       class="absolute inset-0 w-16 xl:w-32 xl:-translate-x-1/4 -translate-x-[30%] -translate-y-1/4"
     />
-    <img
+    <CaptionedImage
       src="/projects/bmx/bmx.png"
       alt="BMX Project"
-      class="w-full max-h-[411px] object-cover"
+      caption="This is the BMX project caption"
+      classString="w-full max-h-[411px] object-cover"
     />
   </div>
   <div
