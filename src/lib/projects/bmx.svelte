@@ -5,7 +5,7 @@
     <img
       src="/projects/bmx/bmx.svg"
       alt="BMX Project Logo"
-      class="absolute inset-0 w-16 xl:w-72 xl:-translate-x-1/3 -translate-x-[5%] -translate-y-1/4"
+      class="absolute inset-0 w-16 xl:w-32 xl:-translate-x-1/4 -translate-x-[30%] -translate-y-1/4"
     />
     <img
       src="/projects/bmx/bmx.png"
