@@ -1,10 +1,12 @@
 <script lang="ts">
   import Icon from '$lib/icon/Icon.svelte';
   import Plus from '$lib/icon/heroicons/Plus.js';
-
+//import a fade transition
   import { fade } from 'svelte/transition';
   import InformationCircle from '$lib/icon/heroicons/InformationCircle.js';
-
+//defining reactive variable node and initialising with empty string
+//op1: set animation, set on click, clippath
+//use chatgpt
   let node = '';
 </script>
 
@@ -84,23 +86,23 @@
 
         <button
           class="group flex items-center justify-center absolute left-[13px] top-[3px] w-[61px] h-[60px] rounded-full bg-black hover:bg-transparent text-black hover:text-white transition-colors"
-          on:click={() => (node = 'storytelling')}
+          on:click={() => (node = 'design')}
         >
           <div
             class="group-hover:text-white absolute text-transparent xl:-translate-x-80 translate-x-16 xl:right-0 left-0 transition-all select-none pointer-events-none"
           >
-            <h1 class="text-xl xl:text-3xl">Storytelling</h1>
+            <h1 class="text-xl xl:text-3xl">Design</h1>
           </div>
           <Icon src={Plus} width="24" />
         </button>
         <button
           class="group flex items-center justify-center absolute left-[128px] top-[94px] w-[61px] h-[60px] rounded-full bg-black hover:bg-transparent text-black hover:text-white transition-colors"
-          on:click={() => (node = 'design')}
+          on:click={() => (node = 'storytelling')}
         >
           <div
             class="group-hover:text-white absolute text-transparent xl:translate-x-16 -translate-x-16 xl:left-0 right-0 transition-all select-none pointer-events-none"
           >
-            <h1 class="text-xl xl:text-3xl">Design</h1>
+            <h1 class="text-xl xl:text-3xl">Storytelling</h1>
           </div>
           <Icon src={Plus} width="24" />
         </button>
