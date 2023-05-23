@@ -41,13 +41,13 @@
 </style>
 
 <div
-  class="container {classString}"
+  class="container"
   on:mouseover={handleFocus}
   on:mouseout={handleBlur}
   on:focus={handleFocus}
   on:blur={handleBlur}
   tabindex="0"
 >
-  <img {src} {alt} />
+  <img class={classString} {src} {alt} />
   <div class="caption" class:show-caption={isHovered}> {caption} </div>
 </div>
