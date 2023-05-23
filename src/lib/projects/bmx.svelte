@@ -1,5 +1,14 @@
 <script>
 import CaptionedImage from "./CaptionedImage.svelte";
+
+import Dropdown from './Dropdown.svelte';
+let content1 = {
+    title: 'Brief',
+    text: `Seventies BMX approached us to explore a new solution for BMX hubs.
+      Current Hubs are not durable enough, too expensive, and restrict certain
+      tricks such as crank flips.`
+  };
+  
 </script>
 
 <div
@@ -21,16 +30,20 @@ import CaptionedImage from "./CaptionedImage.svelte";
   <div
     class="flex flex-col space-y-5 max-w-[600px] xl:px-0 xl:max-w-[400px] h-full justify-center"
   >
-    <div class="flex flex-col space-y-2.5">
-      <h1 class="text-4xl text-right" style="color: #cc0000;">Bmx</h1>
+    <div class="flex flex-col space-y-2.5 items-end">
+      <h1 class="text-4xl" style="color: #ff9999; margin: 0; padding: 0; font-weight: bold;">Bmx</h1>
     </div>
 
-    <div class="flex flex-col space-y-2.5">
-      <h1 class="text-4xl text-right italic" style="color: #cc0000;">PRJ</h1>
+    <div class="flex flex-col space-y-2.5 items-end">
+      <h1 class="text-4xl italic" style="color: #ff9999; margin: 0; padding: 0;">PRJ</h1>
     </div>
 
     <div class="flex flex-col space-y-2.5">
       <h2 class="text-4xl">Engineering</h2>
+    </div>
+
+    <div class="flex flex-col space-y-5">
+      <Dropdown buttonText="Toggle Info" dropdownContent="This is the dropdown content." />
     </div>
 
     <div class="flex flex-col space-y-5">
