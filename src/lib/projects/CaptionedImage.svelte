@@ -2,6 +2,7 @@
   export let src;
   export let alt;
   export let caption;
+  export let classString = '';
   let isHovered = false;
 
   function handleFocus() {
@@ -40,7 +41,7 @@
 </style>
 
 <div
-  class="container"
+  class="container {classString}"
   on:mouseover={handleFocus}
   on:mouseout={handleBlur}
   on:focus={handleFocus}
