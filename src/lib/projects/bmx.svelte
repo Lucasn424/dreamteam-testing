@@ -22,6 +22,14 @@ import CaptionedImage from "./CaptionedImage.svelte";
     class="flex flex-col space-y-5 max-w-[600px] xl:px-0 xl:max-w-[400px] h-full justify-center"
   >
     <div class="flex flex-col space-y-2.5">
+      <h1 class="text-4xl text-right" style="color: #cc0000;">Bmx</h1>
+    </div>
+
+    <div class="flex flex-col space-y-2.5">
+      <h1 class="text-4xl text-right italic" style="color: #cc0000;">PRJ</h1>
+    </div>
+
+    <div class="flex flex-col space-y-2.5">
       <h2 class="text-4xl">Engineering</h2>
     </div>
 
